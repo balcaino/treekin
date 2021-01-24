@@ -1,0 +1,111 @@
+//declarar clases para tarjeta de precios
+.precios{
+    background: url('../img/bg-price.svg');
+    min-height: 135vh;
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    padding:30px 3em;  
+    @media (max-width: 768px) {
+    background-size: cover;
+    background-position: center center;
+    }
+}
+
+.precios-contenido{
+    width:100%;
+   
+&__titulo{
+    font-family: $raleway;
+    font-size:$xx-large;
+    font-weight:$bold;
+    color:$white;
+    text-align: center;
+    align-self: center;
+    margin-top:12.5rem;
+    margin-bottom:2.1875rem;
+    }
+
+&__cards{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    @media (max-width: 768px) {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    }
+}
+
+.precios-contenido__cards--1{
+    background-color:$white;
+    width: 300px;
+    height:420px;
+    padding: 30px;
+    margin:25px;
+    float:left;
+}
+
+.precios-contenido__cards--1:hover{
+    -webkit-box-shadow: 3px 15px 22px -3px rgba(46,46,46,1);
+    -moz-box-shadow: 3px 15px 22px -3px rgba(46,46,46,1);
+    box-shadow: 3px 15px 22px -3px rgba(46,46,46,1);
+}
+
+.precios-contenido__cards--2{
+    background-color:$white;
+    width: 300px;
+    height:420px;
+    padding: 30px;
+    margin:25px;
+    overflow: hidden;
+}
+
+.precios-contenido__cards--2:hover{
+    -webkit-box-shadow: 3px 15px 22px -3px rgba(46,46,46,1);
+    -moz-box-shadow: 3px 15px 22px -3px rgba(46,46,46,1);
+    box-shadow: 3px 15px 22px -3px rgba(46,46,46,1);
+}
+
+.cards__info{
+    line-height: 200%;
+
+&--titulo{
+    font-family:$open-sans;
+    font-weight:$mediumbold;
+    font-size:$large;
+    line-height: 200%;
+    }
+
+&--precio{
+    font-family:$raleway;
+    font-weight:$bold;
+    font-size: $xx-large;
+    line-height: 150%;
+    }
+
+&--hr{
+    color:$gray;
+    margin-top:15px;
+    margin-bottom:15px;
+    }
+
+&--list {
+    list-style: none;
+    list-style-position: inside;
+    padding-left:10px;
+    padding-right:10px;
+    font-family:$open-sans;
+    font-size:$x-small;
+    font-weight:$mediumbold;
+    }
+}
+
+li:before {
+    content:"•   ";
+    margin-right:10px;
+}
