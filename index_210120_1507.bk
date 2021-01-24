@@ -58,11 +58,9 @@
     
         <div class="main-contenido__info">
 
-           
-               <div class="main-contenido__info__grafico">
+            <div class="main-contenido__info__grafico">
                 <img class="main-contenido__info__grafico--img" src="./assets/img/bar-graph.svg" alt="Gráfico de barras">
-            </div> 
-                                
+            </div>
 
             <div class="main-contenido__info__textos">
                 <h3 class="main-contenido__info__textos--sub">Estadísticas de tu progreso</h3>
